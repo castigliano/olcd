@@ -8,6 +8,7 @@ This source code is the C++ implementation of our online community detection met
 HOW TO COMPILE
 
 Windows: This source code should be sufficient to compile the executable in Visual C++ 2010 Express or similar IDE.
+
 Linux: g++ -std=c++11 -O3 OnlineCD.cpp
 
 HOW TO RUN
@@ -17,9 +18,11 @@ The program handles networks in the form of a flat text file containing edge adj
 Run the program like: 
 .\OnlineCD.exe  \<EdgeListFile\> \<ResultFile\> [\<Number of Edges\>]
 
-<EdgeListFile> is the file path to input edge list file. e.g., .\DemoDatasetFolder\DemoEdgeList.txt  
-<ResultFile> is the file path for the program to output partition result. e.g., .\DemoDatasetFolder\PartitionResult.txt 
-<Number of Edges> is the number of edges in edge list file and it is optional. If it is added, the program will use OLEM algorithm, otherwise OLTM algorithm. 
+\<EdgeListFile\> is the file path to input edge list file. e.g., .\DemoDatasetFolder\DemoEdgeList.txt  
+
+\<ResultFile\> is the file path for the program to output partition result. e.g., .\DemoDatasetFolder\PartitionResult.txt 
+
+\<Number of Edges\> is the number of edges in edge list file and it is optional. If it is added, the program will use OLEM algorithm, otherwise OLTM algorithm. 
 
 The program will output partition result of edge list file (a list of comma-delimited pairs of node and community it belongs to) to <ResultFile> and modularity of partition result to console.
 
